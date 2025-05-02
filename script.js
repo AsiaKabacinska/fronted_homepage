@@ -1,15 +1,23 @@
-const header = document.querySelector("h1");
-console.log(header);
+const humanOne = {
+  name: "Asia",
+  age: 18,
+};
 
-const text = document.querySelector("p");
-console.log(text);
+const humanTwo = {
+  name: "Basia",
+  age: humanOne.age,
+};
 
-const title = document.querySelector("title");
-console.log(title);
+humanOne.age = 22;
 
-header.innerHTML = "ZMIANA !!! :D:D:D:D";
-console.log(header.style);
-header.style.color = "red";
+console.log(humanOne.age);
+console.log(humanTwo.age);
 
-const contentJs = document.querySelector(".article__content--js");
-contentJs.innerHTML = "Jestem wypelniony JSem !!! 🥳 ";
+const firstName = "Asia";
+const secondName = "Zielinska";
+
+function hello() {
+  return `Witaj na mojej stronie homepage. Jestem ${firstName} ${secondName}`;
+}
+console.log(hello());
+
