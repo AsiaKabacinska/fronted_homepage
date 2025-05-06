@@ -24,7 +24,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 50vw;
+  flex-basis: 100%;
   background-color: #424c55;
   opacity: 0.4;
 }
@@ -151,6 +151,9 @@ table caption {
   gap: 20px;
   text-align: center;
 }
+.hamburger {
+  display: none;
+}
 
 @media (max-width: 768px) {
   main {
@@ -176,7 +179,7 @@ table caption {
     /* gap: 30px; */
   }
   .article {
-    padding: 10px;
+    padding: 40px;
   }
   .footer__paragraph {
     font-size: 14px;
@@ -184,5 +187,37 @@ table caption {
   }
   .footer__top-link {
     display: none;
+  }
+  .navigation {
+    display: none;
+  }
+  /* position: absolute; */
+
+  .header {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hamburger {
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    background: none;
+    font-size: 2rem;
+    padding: 4px;
+    background: none;
+    border: 0;
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    cursor: pointer;
+  }
+  .navigation--open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
