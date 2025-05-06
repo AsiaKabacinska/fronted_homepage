@@ -151,3 +151,38 @@ table caption {
   gap: 20px;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .gridContainer__helloSection {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .image {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  .gridContainer__articles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    /* gap: 30px; */
+  }
+  .article {
+    padding: 10px;
+  }
+  .footer__paragraph {
+    font-size: 14px;
+    font-style: italic;
+  }
+  .footer__top-link {
+    display: none;
+  }
+}
