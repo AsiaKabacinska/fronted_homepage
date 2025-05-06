@@ -7,12 +7,11 @@ html {
   box-sizing: inherit;
 }
 body {
-  background: #483ffb;
+  background: #ffffff;
   background: radial-gradient(
     circle,
-    rgba(72, 63, 251, 1) 0%,
-    rgba(186, 174, 66, 1) 54%,
-    rgba(252, 70, 107, 1) 73%
+    rgba(255, 255, 255, 1) 0%,
+    rgba(166, 119, 166, 1) 100%
   );
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -26,19 +25,26 @@ main {
   align-items: center;
   justify-content: center;
   flex-basis: 50vw;
-  background-color: blue;
+  background-color: #424c55;
+  opacity: 0.4;
 }
 .navigation__link {
   color: white;
   margin: 16px 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  cursor: pointer;
 }
 .image {
   margin: 0 auto;
   text-align: center;
-  width: 50vw;
-
+  width: 25vw;
   border-radius: 50%;
   display: block;
+  float: left;
+  margin-right: 16px; /* odstęp między obrazkiem a tekstem */
+  margin-bottom: 8px; /* opcjonalny odstęp pod obrazkiem */
+  /* width: 250px; */
 }
 .page-header {
   margin: 16px;
@@ -48,39 +54,52 @@ main {
   text-align: center;
 }
 .paragraph {
-  padding: 10px;
+  padding: 15px;
   margin: 16px;
-  text-align: center;
+  text-align: left;
   font-weight: normal;
   line-height: 1.75;
 }
+.paragraph__hello {
+  padding: 15px;
+  margin: 16px;
+  text-align: left;
+  font-weight: italic;
+  letter-spacing: 1.5px;
+  line-height: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .article {
-  background-color: blueviolet;
+  background-color: #9a7aa0;
 }
 .page-header__heading {
   margin: 16px;
 }
 .article__header {
-  background-color: firebrick;
-}
-.footer {
-  /* padding: 30px;
-  margin: 30px; */
-  text-align: center;
-  font-size: 30px;
-  background-color: aqua;
-  max-width: 768px;
-  margin: 0 auto;
+  font-weight: 500;
   letter-spacing: 2px;
 }
+.footer {
+  text-align: center;
+  font-size: 12px;
+  background-color: white;
+  opacity: 0.5;
+  margin: 0 auto;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  color: #424c55;
+}
 .footer__paragraph {
-  font-size: 30px;
+  font-size: 24px;
   font-style: italic;
 }
 .footer__top-link {
   position: fixed;
   bottom: 16px;
   right: 16px;
+  margin-bottom: 60px;
   background-color: black;
   color: white;
   display: block;
@@ -108,4 +127,27 @@ table {
 }
 table caption {
   margin-bottom: 2rem;
+}
+.page-header__button {
+  background-color: white;
+  color: #424c55;
+  font-weight: 800;
+  border: 0;
+  display: inline-block;
+  padding: 10px 10px;
+  border-radius: 4px;
+  margin: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.gridContainer__articles {
+  display: grid;
+  grid-template-columns: repeat(2, 4fr);
+  gap: 30px;
+}
+.gridContainer__helloSection {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  text-align: center;
 }
