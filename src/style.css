@@ -21,6 +21,7 @@ main {
   margin: 60px auto;
 }
 .navigation {
+  margin-top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,6 +191,11 @@ table caption {
   }
   .navigation {
     display: none;
+    opacity: 1;
+    background-color: #2e0a35;
+    color: #ffffff;
+    font-style: normal;
+    letter-spacing: 2px;
   }
   /* position: absolute; */
 
