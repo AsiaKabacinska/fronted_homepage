@@ -1,0 +1,13 @@
+.header {
+  position: sticky;
+  top: 0;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: 1px;
+
+  @media screen and (max-width: $mobileVersion) {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+}

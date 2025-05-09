@@ -1,0 +1,25 @@
+.gridContainer {
+    &__articles {
+      display: grid;
+      grid-template-columns: repeat(2, 4fr);
+      gap: 30px;
+      @media screen and (max-width: $mobileVersion) {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+    }
+    &__helloSection {
+      background: var(--backgroundColor);
+      color: var(--textColor);
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+      text-align: center;
+      @media screen and (max-width: $mobileVersion) {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  

@@ -1,0 +1,16 @@
+.article {
+  background-color: #9a7aa0;
+  @media screen and (max-width: $mobileVersion) {
+    padding: 40px;
+  }
+  &__header {
+    font-weight: 500;
+    letter-spacing: 2px;
+    &::before {
+      content: "🍀";
+    }
+  }
+  &__list {
+    text-align: left;
+  }
+}

@@ -1,6 +1,15 @@
 //TODO czy to sie dodalo poprawnie ?
 @import "../../node_modules/normalize.css/normalize.css";
 @import "components/navigation.scss";
+@import "components/footer.scss";
+@import "components/article.scss";
+@import "components/gridContainer.scss";
+@import "components/image.scss";
+@import "components/pageHeader.scss";
+@import "components/hamburger.scss";
+@import "components/header.scss";
+@import "components/paragraph.scss";
+@import "components/section.scss";
 
 $whiteColor: white;
 $fontFamily: Arial, Helvetica, sans-serif;
@@ -21,6 +30,7 @@ $mobileVersion: 768px;
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -50,128 +60,6 @@ main {
   }
 }
 
-.image {
-  margin: 0 auto;
-  text-align: center;
-  width: 25vw;
-  border-radius: 50%;
-  display: block;
-  float: left;
-  margin-right: 16px; /* odstęp między obrazkiem a tekstem */
-  margin-bottom: 8px; /* opcjonalny odstęp pod obrazkiem */
-  /* width: 250px; */
-  @media screen and (max-width: $mobileVersion) {
-    float: none;
-    display: block;
-    width: 100%;
-    max-width: 100vw;
-    margin: 0 auto;
-    padding: 30px;
-  }
-}
-
-.header {
-  position: sticky;
-  top: 0;
-  font-size: 18px;
-  font-style: italic;
-  letter-spacing: 1px;
-
-  @media screen and (max-width: $mobileVersion) {
-    min-height: 50px;
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.page-header {
-  margin: 16px;
-  text-align: center;
-
-  &__heading {
-    margin: 16px;
-  }
-}
-.section {
-  text-align: center;
-
-  @media screen and (max-width: $mobileVersion) {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
-.paragraph {
-  padding: 15px;
-  margin: 16px;
-  text-align: left;
-  font-weight: normal;
-  line-height: 1.75;
-  &__hello {
-    padding: 15px;
-    margin: 16px;
-    text-align: left;
-    font-weight: italic;
-    letter-spacing: 1.5px;
-    line-height: 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.article {
-  background-color: #9a7aa0;
-  @media screen and (max-width: $mobileVersion) {
-    padding: 40px;
-  }
-  &__header {
-    font-weight: 500;
-    letter-spacing: 2px;
-    &::before {
-      content: "🍀";
-    }
-  }
-  &__list {
-    text-align: left;
-  }
-}
-
-.footer {
-  text-align: center;
-  font-size: 12px;
-  background-color: white;
-  opacity: 0.5;
-  margin: 0 auto;
-  margin-bottom: 0;
-  letter-spacing: 2px;
-  color: #424c55;
-
-  &__paragraph {
-    font-size: 24px;
-    font-style: italic;
-
-    @media screen and (max-width: $mobileVersion) {
-      font-size: 14px;
-      font-style: italic;
-    }
-    &__top-link {
-      position: fixed;
-      bottom: 16px;
-      right: 16px;
-      margin-bottom: 60px;
-      background-color: black;
-      color: white;
-      display: block;
-      padding: 10px 14px;
-      border-radius: 30px;
-      @media screen and (max-width: $mobileVersion) {
-        display: none;
-      }
-    }
-  }
-}
-
 .special {
   color: beige;
   font-weight: 300;
@@ -181,63 +69,7 @@ main {
 table {
   width: 100%;
   text-align: center;
-}
-table caption {
-  margin-bottom: 2rem;
-}
-.page-header__button {
-  background-color: white;
-  color: #424c55;
-  font-weight: 600;
-  text-transform: uppercase;
-  border: 0;
-  display: inline-block;
-  padding: 12px 10px;
-  border-radius: 4px;
-  margin: 30px;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-.gridContainer {
-  &__articles {
-    display: grid;
-    grid-template-columns: repeat(2, 4fr);
-    gap: 30px;
-    @media screen and (max-width: $mobileVersion) {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-  }
-  &__helloSection {
-    background: var(--backgroundColor);
-    color: var(--textColor);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    text-align: center;
-    @media screen and (max-width: $mobileVersion) {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-  }
-}
-
-.hamburger {
-  display: none;
-  @media screen and (max-width: $mobileVersion) {
-    min-height: 50px;
-    display: flex;
-    justify-content: flex-end;
-    background: none;
-    font-size: 2rem;
-    padding: 4px;
-    border: 0;
-    display: block;
-    position: absolute;
-    top: 0px;
-    right: 10px;
-    cursor: pointer;
+  caption {
+    margin-bottom: 2rem;
   }
 }

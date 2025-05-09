@@ -1,0 +1,9 @@
+.section {
+    text-align: center;
+  
+    @media screen and (max-width: $mobileVersion) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  

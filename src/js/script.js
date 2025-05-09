@@ -1,4 +1,5 @@
 import differenceInDays from "date-fns/differenceInDays";
+import { substrackNumbers } from "./substractFunction";
 
 // export const humanOne = {
 //   name: "Asia",
@@ -41,3 +42,15 @@ button.addEventListener("click", (e) => {
 
   document.documentElement.style.setProperty("--backgroundColor", "tomato");
 });
+
+//date-fns
+
+const { differenceInCalendarYears } = require("date-fns");
+
+const result = differenceInCalendarYears(
+  new Date(2025, 5, 9),
+  new Date(1992, 9, 18)
+);
+
+console.log("Difference in calendar years is about: " + result);
+console.log(substrackNumbers(7, 5));
