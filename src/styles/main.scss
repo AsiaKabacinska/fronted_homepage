@@ -10,9 +10,10 @@
 @import "components/header.scss";
 @import "components/paragraph.scss";
 @import "components/section.scss";
-
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Poiret+One&display=swap");
 $whiteColor: white;
-$fontFamily: Arial, Helvetica, sans-serif;
+$fontFamily: "Poiret One", sans-serif;
+
 $mobileVersion: 768px;
 
 // :root {
@@ -46,6 +47,9 @@ body {
   );
   color: $whiteColor;
   font-family: $fontFamily;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 main {
   max-width: 768px;
