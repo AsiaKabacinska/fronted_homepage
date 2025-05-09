@@ -1,0 +1,38 @@
+
+
+$mobileVersion: 768px;
+
+.navigation {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 100%;
+  background-color: #424c55;
+  opacity: 0.4;
+
+  @media screen and (max-width: $mobileVersion) {
+    display: none;
+    opacity: 1;
+    background-color: #2e0a35;
+    color: #ffffff;
+    font-style: normal;
+    letter-spacing: 2px;
+  }
+
+  &__link {
+    color: white;
+    margin: 16px 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  &--open {
+    @media screen and (max-width: $mobileVersion) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

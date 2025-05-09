@@ -20,6 +20,7 @@
   "description": "",
   "dependencies": {
     "cowsay": "^1.6.0",
+    "date-fns": "^4.1.0",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {

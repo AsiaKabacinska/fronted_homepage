@@ -1,6 +1,22 @@
+//TODO czy to sie dodalo poprawnie ?
+@import "../../node_modules/normalize.css/normalize.css";
+@import "components/navigation.scss";
+
 $whiteColor: white;
 $fontFamily: Arial, Helvetica, sans-serif;
 $mobileVersion: 768px;
+
+// :root {
+//   --textColor: black;
+//   --backgroundColor: rgb(204, 6, 231);
+// }
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --textColor: white;
+//     --backgroundColor: black;
+//   }
+// }
 
 html {
   box-sizing: border-box;
@@ -37,35 +53,6 @@ main {
   margin-top: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-basis: 100%;
-  background-color: #424c55;
-  opacity: 0.4;
-
-  @media screen and (max-width: $mobileVersion) {
-    display: none;
-    opacity: 1;
-    background-color: #2e0a35;
-    color: #ffffff;
-    font-style: normal;
-    letter-spacing: 2px;
-  }
-  &__link {
-    color: white;
-    margin: 16px 16px;
-    letter-spacing: 2px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  &--open {
-    @media screen and (max-width: $mobileVersion) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-}
 
 .image {
   margin: 0 auto;
@@ -226,6 +213,8 @@ table caption {
     }
   }
   &__helloSection {
+    background: var(--backgroundColor);
+    color: var(--textColor);
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
