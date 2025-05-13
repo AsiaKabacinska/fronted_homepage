@@ -5,4 +5,6 @@
 - HTML
 - JS
 - Tailwind
-- Parcel 
+- Parcel
+- SCSS 
+- node
