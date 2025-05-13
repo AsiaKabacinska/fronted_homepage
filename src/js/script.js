@@ -1,5 +1,7 @@
 import differenceInDays from "date-fns/differenceInDays";
 import { substrackNumbers } from "./substractFunction";
+import { sumFromArr } from "./sumaZTablicy";
+import { sumaLiczb } from "./sumaZTablicy";
 
 // export const humanOne = {
 //   name: "Asia",
@@ -54,3 +56,17 @@ const result = differenceInCalendarYears(
 
 console.log("Difference in calendar years is about: " + result);
 console.log(substrackNumbers(7, 5));
+
+document.cookie = "nazwa =  asia";
+document.cookie = "nazwa1 =  asia1";
+document.cookie = "nazwa2 =  asi2";
+
+const myObj = {
+  name: "Asia",
+  age: 28,
+};
+
+localStorage.setItem("asia", JSON.stringify(myObj));
+
+const getStorage = JSON.parse(localStorage.getItem("asia"));
+console.log(getStorage);
