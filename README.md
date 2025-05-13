@@ -1,4 +1,4 @@
-# Oto moja strona robocza do nauki frontendu
+# Oto moja strona robocza do nauki frontendu 💪
 
 ## Wykorzystywane technologie: 
 - CSS
@@ -8,3 +8,5 @@
 - Parcel
 - SCSS 
 - node
+- grid
+- flexbox
