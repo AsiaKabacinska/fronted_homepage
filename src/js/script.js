@@ -2,6 +2,7 @@ import differenceInDays from "date-fns/differenceInDays";
 import { substrackNumbers } from "./substractFunction";
 import { sumFromArr } from "./sumaZTablicy";
 import { sumaLiczb } from "./sumaZTablicy";
+import "../styles/main.scss";
 
 // export const humanOne = {
 //   name: "Asia",

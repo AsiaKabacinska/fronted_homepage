@@ -1,0 +1,26 @@
+.paragraph {
+  padding: 15px;
+  margin: 16px;
+  text-align: left;
+  font-weight: normal;
+  line-height: 1.75;
+}
+
+.paragraph__hello {
+  padding: 15px;
+  margin: 16px;
+  text-align: left;
+  font-weight: italic;
+  letter-spacing: 1.5px;
+  line-height: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=paragraph.css.map */

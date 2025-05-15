@@ -1,0 +1,58 @@
+.page-header {
+  margin: 16px;
+  text-align: center;
+}
+
+.page-header__heading {
+  margin: 16px;
+}
+
+.page-header__button {
+  background-color: white;
+  color: #424c55;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0;
+  display: inline-block;
+  padding: 12px 10px;
+  border-radius: 4px;
+  margin: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.page-header__button:hover {
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=pageHeader.css.map */
