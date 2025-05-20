@@ -4,6 +4,7 @@ import { sumFromArr } from "./sumaZTablicy";
 import { sumaLiczb } from "./sumaZTablicy";
 import "../styles/main.scss";
 
+
 // export const humanOne = {
 //   name: "Asia",
 //   age: 18,
